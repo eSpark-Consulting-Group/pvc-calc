@@ -1,0 +1,30 @@
+import './DockLeveller.css';
+import headLogo from '../../images/logo/SPIMA.webp';
+import { NavLink } from "react-router-dom";
+
+
+function DockLeveller() {
+    return (
+        <>
+            <div className='maindiv' >
+                <div className='mainHeader' >
+                    <img className='headLogo' src={headLogo} alt='dockHead' />
+                    <div className='headerText'>
+                        <p>Your partner in Intralogistics solutions</p>
+                    </div>
+                    <div className='header2Text'>
+                        <p>Online Tools</p>
+                    </div>
+                </div>
+                <div className="main-head">
+                    <NavLink exact activeClassName='headerActive' className='header1' to='/' >PVC Strip Curtain Calculator</NavLink>
+                    <NavLink exact activeClassName='headerActive' className='header2' to='/dock' >Dock Leveller</NavLink>
+                </div>
+                <h1 className='head'>DOCK LEVELLER</h1>
+            </div>
+        </>
+    );
+};
+
+
+export default DockLeveller;
